@@ -5,8 +5,9 @@
 const nombre = process.argv[2];
 const apellido = process.argv[3];
 
-function recibirValores(nombre, apellido){
+function saludarGritando(nombre, apellido){
+    console.log((`¡Hola ${nombre} ${apellido}!`).toLocaleUpperCase());
   
 }
-
-export { recibirValores}
+saludarGritando(nombre,apellido)
+exports.module = saludarGritando
